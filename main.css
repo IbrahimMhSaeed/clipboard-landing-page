@@ -1,0 +1,274 @@
+:root{
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%);
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
+    --white: #fff;
+}
+
+body{
+    font-size: 18px;
+    color: var(--grayish-blue);
+    text-align: center;
+    font-family: 'Bai Jamjuree', sans-serif;
+    line-height: 1.3;
+}
+
+h2,
+h3{
+    color: var(--dark-grayish-blue)
+}
+
+header{
+    background: url("../img/bg-header-desktop.png");
+    height: 300px;
+}
+
+.logo{
+    padding-top: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-p{
+    margin: 0px auto;
+}
+
+h1{
+    margin: 0px 20px;
+    color: var(--dark-grayish-blue);
+    font-weight: 600;
+    font-size: 34px;
+}
+
+.desc-p{
+    margin: 15px 15px;
+}
+
+.buttons{
+    height: 140px;
+    margin: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: inherit;
+}
+
+.buttons div{
+    height: 25px;
+    width: 300px;
+    align-self: center;
+    color: var(--white);
+    padding: 15px;
+    border-radius: 50px;
+    font-size: 20px;
+    transition-duration: 0.3s;
+}
+
+.buttons div:first-child{
+    background-color: var(--strong-cyan);
+    box-shadow: 0px 3px 0px 0px #299584;
+}
+
+.buttons div:first-child:hover{
+    background-color: #26baa4ab;
+}
+
+.buttons div:last-child{
+    background-color: var(--light-blue);
+    box-shadow: 0px 3px 0px 0px hsl(233, 47%, 48%);;
+}
+
+.buttons div:last-child:hover{
+    background-color: #6173ffb8;
+}
+
+.sub-sec{
+    margin-top: 180px;
+}
+
+h2{
+    font-size: 34px;
+}
+
+.mid-sec section,
+.mid-sec img{
+    margin-top: 50px;
+}
+
+.mid-sec-img{
+    max-width: 90%;
+    height: auto;
+    margin: 50px 10px;
+}
+
+.company{
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company img{
+    width: 120px;
+    height: auto;
+    margin-top: 50px;
+}
+
+footer{
+    margin-top: 170px;
+    padding-top: 50px;
+    background-color: #e3e3e3;
+    color: var(--dark-grayish-blue);
+}
+
+footer img{
+    width: 60px;
+    height: 60px;
+}
+
+.links div,
+.social{
+    margin-top: 30px;
+}
+
+.links div,
+.social img{
+    transition-duration: 0.3s;
+}
+
+.links div:hover{
+    color: var(--strong-cyan);
+}
+
+.social{
+    margin: 30px 70px 0px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social img{
+    width: 30px;
+    height: 30px;
+    transition-duration: 0.3s;
+}
+
+.social img:hover{
+    filter: invert(69%) sepia(13%) saturate(3468%) hue-rotate(120deg) brightness(91%) contrast(70%);
+}
+
+.buttons div,
+.company img,
+.links div,
+.social img{
+    cursor: pointer;
+}
+
+@media (min-width: 768px){
+    body{
+        line-height: 1.5;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    .main-p p{
+        width: 650px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .buttons{
+        flex-direction: row;
+        justify-content: space-around;
+        margin-right: auto;
+        margin-left: auto;
+        width: 500px;
+    }
+    .buttons div{
+        width: 200px;
+        
+    }
+    .second-header{
+        margin-top: 70px;
+    }
+    .second-header p{
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    footer{
+        padding: 30px 70px;
+        margin-top: 70px;
+        display: flex;
+        justify-content:space-between;
+    }
+    footer img{
+        margin: 0px 40px 0px 20px;
+    }
+    .links{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px 40px;
+        height: fit-content;
+    }
+    .links div{
+        margin: 0px 10px 15px;
+        align-self: flex-start;
+    }
+    .social{
+        padding: 0px;
+        margin: 0px;
+    }
+    .social img{
+        align-self: center;
+        margin: 10px;
+    } 
+}
+
+@media (min-width: 1024px){
+    .first-img-sec{
+        display: flex;
+    }
+    .first-img-sec img{
+        max-width: 70%;
+        transform: translateX(-40px);
+    }
+    .first-img-sec-container{
+        margin-top: 20px;
+        text-align: left;
+        transform: translateX(5vw);
+    }
+    .first-img-sec-container p{
+        margin: 0px;
+        width: 300px;
+    }
+    .mid-sec h1{
+        font-size: 2rem;
+    }
+    .second-img-sec-container{
+        display: flex;
+        margin: 0px 50px;
+        justify-content: space-between;
+    }
+    .second-img-sec-container section{
+        width: 30%;
+    }
+    .company{
+        flex-direction: row;
+        justify-content: space-around;
+        margin-right: 5vw;
+        margin-left: 5vw;
+    }
+    footer{
+        padding-right: 10vw;
+        padding-left: 10vw;
+    }
+    .links{
+        align-self: flex-end;
+    }
+}
+
+/* you still need to fix the hover on the
+ social media icons */
